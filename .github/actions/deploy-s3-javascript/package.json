@@ -4,6 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
+    "build": "ncc build index.js -o dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,5 +15,8 @@
     "@actions/core": "^3.0.0",
     "@actions/exec": "^3.0.0",
     "@actions/github": "^9.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.4"
   }
 }
